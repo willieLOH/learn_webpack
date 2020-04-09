@@ -1,8 +1,10 @@
 module.exports = {
   mode: "development",
-  entry: "./app.js",
+  entry: "./src/app.js",
   output: {
-    path: __dirname,
     filename: "bundle.js"
+  },
+  devServer: {
+    contentBase: "./dist"
   }
 }
