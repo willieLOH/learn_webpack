@@ -81,19 +81,19 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./app.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./app.js":
-/*!****************!*\
-  !*** ./app.js ***!
-  \****************/
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("document.write(\"Welcome to Webpack!\");\n\nconsole.log('App loaded');\n\n\n//# sourceURL=webpack:///./app.js?");
+eval("document.write(\"Welcome to Webpack!\");\n\nconsole.log('App loaded');\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
