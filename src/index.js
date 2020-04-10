@@ -1,3 +1,12 @@
-document.write("Welcome to Webpack!");
+import './style.css';
 
-console.log('App loaded');
+function component() {
+  const element = document.createElement('div');
+
+  element.innerHTML = "Welcome to Webpack!";
+  element.classList.add('hello');
+
+  return element;
+}
+
+document.body.appendChild(component());
