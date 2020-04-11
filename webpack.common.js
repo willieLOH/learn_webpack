@@ -1,4 +1,6 @@
+const TerserJSPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
@@ -15,6 +17,12 @@ module.exports = {
           "css-loader"
         ]
       }
+    ]
+  },
+  optimization: {
+    minimizer: [
+      new TerserJSPlugin({}),
+      new OptimizeCSSAssetsPlugin({})
     ]
   },
   plugins: [
