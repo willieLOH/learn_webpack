@@ -31,9 +31,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new MiniCssExtractPlugin({
-      filename: "[name].[contenthash].css"
-    }),
+    new MiniCssExtractPlugin(),
     new CopyPlugin([
       { from: "static" }
     ])
