@@ -1,3 +1,4 @@
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
@@ -10,13 +11,14 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          "style-loader",
+          MiniCssExtractPlugin.loader,
           "css-loader"
         ]
       }
     ]
   },
   plugins: [
+    new MiniCssExtractPlugin(),
     new CopyPlugin([
       { from: "static" }
     ])
